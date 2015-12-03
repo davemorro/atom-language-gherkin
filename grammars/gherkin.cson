@@ -21,11 +21,11 @@
         "name": 'string.single.qoute.gherkin'
     }
     {
-        "match": '\\s*(Scenario\\:|Feature\\:|Scenario Outline\\:|Background\\:|Examples\\:)'
+        "match": '\\s*(Scenario\\:|Feature\\:|Scenario Outline\\:|Background\\:|Examples\\:|Ability\\:|Considerations\\:)'
         "name": 'keyword.gherkin'
     }
     {
-        "match": '\\s*(Given|Then|When|And|But)'
+        "match": '\\s*(Given|Then|When|And|But|^(In order to|As an?|I))'
         "name": 'support.class.gherkin'
     }
     {
@@ -43,6 +43,10 @@
     }
     {
         "match": '(\\<\\w+\\>)'
+        "name": 'constant.character.escape.feature'
+    }
+    {
+        "match": '(View|Component|Email)'
         "name": 'constant.character.escape.feature'
     }
     {
