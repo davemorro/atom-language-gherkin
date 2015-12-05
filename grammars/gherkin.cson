@@ -46,8 +46,9 @@
         "name": 'constant.character.escape.feature'
     }
     {
-        "match": '(View|Component|Email)'
-        "name": 'constant.character.escape.feature'
+        "begin": '[A-Z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*'
+        "end": '[A-Z][a-z]+'
+        "name": 'constant.other.character.component'
     }
     {
         "match": "(\\s\\'.*?[^\\']\\'\\s)"
