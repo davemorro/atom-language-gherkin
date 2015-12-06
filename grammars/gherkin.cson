@@ -29,7 +29,7 @@
         "name": 'support.class.gherkin'
     }
     {
-        "match": '(?<=\\s|^)(@[A-Za-z0-9_\\-]+)'
+        "match": '(?<=\\s|^)(@[A-Za-z0-9_\\-]+\\([A-Za-z_\\-]+\\))'
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
@@ -46,7 +46,7 @@
         "name": 'constant.character.escape.feature'
     }
     {
-        "begin": '[A-Z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*'
+        "begin": '\\s[A-Z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*'
         "end": '[A-Z][a-z]+'
         "name": 'constant.other.character.component'
     }
