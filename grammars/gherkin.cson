@@ -42,13 +42,29 @@
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
-        "match": '(\\<\\w+\\>)'
-        "name": 'constant.character.escape.feature'
+        "begin": '\\s([A-Z]\\w+):*([A-Z]\\w+)*\\s(Component|Email|View|Screen)'
+        "end": '\\s|\\n'
+        "name": 'constant.other.character.element'
+        'beginCaptures':
+            '1':
+                'name': 'constant.other.element.name.${1:/downcase}'
+            '2':
+                'name': 'constant.other.element.state.${2:/downcase}'
+            '3':
+                'name': 'constant.other.element.type.${3:/downcase}'
     }
     {
-        "begin": '\\s[A-Z]([A-Z0-9]*[a-z][a-z0-9]*[A-Z]|[a-z0-9]*[A-Z][A-Z0-9]*[a-z])[A-Za-z0-9]*'
+        "begin": '\\s[A-Z:]([A-Z0-9:]*[a-z][a-z0-9:]*[A-Z]|[a-z0-9:]*[A-Z][A-Z0-9:]*[a-z])[A-Za-z0-9:]*'
         "end": '[A-Z][a-z]+'
         "name": 'constant.other.character.component'
+    }
+    {
+        "match": ':(\\w+)'
+        "name": 'keyword.state'
+    }
+    {
+        "match": '(\\<\\w+\\>)'
+        "name": 'constant.character.escape.feature'
     }
     {
         "match": "(\\s\\'.*?[^\\']\\'\\s)"
