@@ -54,11 +54,6 @@
                 'name': 'constant.other.element.type.${3:/downcase}'
     }
     {
-        "begin": '([a-z0-9_\\-]+\\.+[0-9a-zA-Z_\\-\\.]+)'
-        "end": '\\s|\\n'
-        "name": 'constant.other.manifest.setting'
-    }
-    {
         "match": ':(\\w+)'
         "name": 'keyword.state'
     }
