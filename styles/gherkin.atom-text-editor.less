@@ -4,6 +4,9 @@ atom-text-editor, :host {
     .constant {
         &.element {
             color: #87c4f1;
+            &:hover {
+                // text-decoration: underline;
+            }
             &.name {
 
             }
@@ -13,6 +16,10 @@ atom-text-editor, :host {
             &.type {
 
             }
+        }
+        &.manifest {
+            color: #abb2bf; //#e06a5c;
+            border-bottom: 1px dotted #abb2bf;
         }
     }
 }
