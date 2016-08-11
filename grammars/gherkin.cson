@@ -75,7 +75,7 @@
     }
     {
         "match": '(\\[[^]]*\\])'
-        "name": 'constant.numeric.gherkin'
+        "name": 'constant.numeric.gherkin.manifest'
     }
     {
         "match": '\\|\\s(.*)\\s\\|'
