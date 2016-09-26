@@ -25,7 +25,7 @@
         "name": 'keyword.gherkin'
     }
     {
-        "match": '\\s*(Given|Then|When|And|But|^(In order to|As an?|I))'
+        "match": '\\s*(Given|Then|When|And|But|^(In order to|As (an?)?|I))'
         "name": 'support.class.gherkin'
     }
     {
@@ -76,6 +76,10 @@
     {
         "match": '(\\[[^]]*\\])'
         "name": 'constant.numeric.gherkin.manifest'
+    }
+    {
+        "match": '(t\\(([^\\)]*)\\))'
+        "name": 'constant.numeric.gherkin.locale.manifest'
     }
     {
         "match": '\\|\\s(.*)\\s\\|'
