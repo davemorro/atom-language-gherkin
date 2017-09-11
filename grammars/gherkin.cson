@@ -29,7 +29,7 @@
         "name": 'support.class.gherkin'
     }
     {
-        "match": '(?<=\\s|^)(@[A-Za-z0-9_\\-]+\\([A-Za-z_\\-]+\\))'
+        "match": '(?<=\\s|^)(@[A-Za-z0-9_\\-]+\\([A-Za-z_.\\/\\-]+\\))'
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
@@ -42,7 +42,7 @@
         "name": 'entity.name.function.decorator.gherkin'
     }
     {
-        "begin": '([A-Z]\\w+):*([A-Z]\\w+)*\\s(Component|Email|View|Screen|Event)'
+        "begin": '([A-Z0-9]\\w+):*([A-Z0-9]\\w+)*\\s(Component|Email|View|Screen|Event|Response)'
         "end": '\\s|\\n'
         "name": 'constant.other.character.element.name-${1:/downcase}.state-${2:/downcase}.type-${3:/downcase}'
         'beginCaptures':
